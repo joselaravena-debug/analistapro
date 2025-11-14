@@ -1,2 +1,0 @@
-# analistapro
-Primer commit
