@@ -18,7 +18,18 @@ Este repositorio contiene la aplicación de una sola página **Trading Analysis 
    ```bash
    git remote add origin https://github.com/<tu-usuario>/<tu-repo>.git
    ```
-3. Empuja la rama actual (`work`) o la rama que prefieras al repositorio remoto:
+3. Confirma que tus cambios locales están listos para ser enviados:
+   ```bash
+   git status
+   ```
+   Deberías ver los archivos modificados listados como "changes not staged for commit" o "untracked".
+4. Agrega y confirma (commit) tus cambios antes de empujarlos:
+   ```bash
+   git add .
+   git commit -m "Publicar Trading Analysis Pro"
+   ```
+   Si ya tenías commits creados previamente, puedes saltarte este paso.
+5. Empuja la rama actual (`work`) o la rama que prefieras al repositorio remoto:
    ```bash
    git push -u origin work
    ```
@@ -26,7 +37,10 @@ Este repositorio contiene la aplicación de una sola página **Trading Analysis 
    ```bash
    git push -u origin work:main
    ```
-4. Verifica en GitHub que aparezcan `index.html` y `README.md`.
+6. Verifica en GitHub que aparezcan `index.html` y `README.md`.
+
+> **Nota:** si ya añadiste un remoto llamado `origin`, puedes actualizarlo con
+> `git remote set-url origin https://github.com/<tu-usuario>/<tu-repo>.git`.
 
 ## Contenido principal
 
